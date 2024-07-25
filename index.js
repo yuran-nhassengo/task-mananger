@@ -16,7 +16,7 @@ app.use(express.json());
 
 app.use(express.urlencoded({extended:false}));
 
-app.use("api/task", require("./router/task-router"));
+app.use("/api/task", require("./router/task-router"));
 
 app.listen(port, () =>{
     console.log("Servidor iniciado...");

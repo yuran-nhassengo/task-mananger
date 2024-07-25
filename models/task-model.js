@@ -5,13 +5,14 @@ const taskSchema = mongoose.Schema(
     {
     title:{
         type: String,
-        require: [true, "Por favor introduza o titulo"]
+        required: [true, "Por favor introduza o titulo"]
     },
     description:{
         type: String,
-        require: [true, "Por favor introduza a descricao"]
+        required: [true, "Por favor introduza a descricao"]
     },
-},{
+},
+{
     timestamps:true,
 }
 

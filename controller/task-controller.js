@@ -16,7 +16,7 @@ const getTask = (req,res) =>{
 
 const createTask = asyncHandler( async(req,res) =>{
     const task = await Task.create({
-        title: req.body.name,
+        title: req.body.title,
         description: req.body.description,
     });
 
